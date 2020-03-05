@@ -341,14 +341,15 @@ class App extends React.Component {
           <div className = {"container"}>
 
             <Switch>
+            {/* save for when registration + databse works
               <Route exact path = "/" component = {
 
                     SignUp
               }/>
-
+            */}
               <Route path = "/signup" component = {SignUp} />
 
-              <Route path = "/main" exact render = {
+              <Route exact path = "/" exact render = {
                   () => (
                   <div>
                     <Dashboard>
@@ -358,9 +359,7 @@ class App extends React.Component {
                     
                   </div>)}/>     
 
-              <Route path = "/weather" component = {Weather} />
-
-              <Route path = "/news" exact render = {News} />
+              <Route path = "/news" component = {News} />
 
               <Route path = "/sport" component = {Sport} />
 

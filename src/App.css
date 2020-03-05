@@ -84,6 +84,7 @@ body{
   
 }
 
+/*
 .dashboardTile:hover{
   background-color: rgb(128, 128, 128, 0.5);
 }
@@ -92,7 +93,7 @@ body{
   background-color: rgba(255, 255, 255, 1);
   
 }
-
+*/
 .dashboardSpace {
   position:sticky;
   padding-top:5em;
