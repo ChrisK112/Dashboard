@@ -1,5 +1,26 @@
-.App {
-  text-align: center;
+.App{
+  width: 100%;
+  min-width: 30em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  display: block;
+  position: relative;
+  min-height: 100vh;
+  max-width: 100em;
+
+}
+
+.container{
+  position: relative;
+  min-height: 100vh;
+  height: 90%;
+  display: block;
+}
+
+body{
+  background-image: url("./assets/images/Background.png");
+  background-size: 100%;
 }
 
 .App-logo {
@@ -35,4 +56,91 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.dashboardTile{
+  background: url("./assets/icons/Container.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  display: inline-block;
+  position: relative;
+  align-self: center; 
+ 
+  margin-bottom: 3%;
+  margin-top:2%;
+  margin-left: 1em;
+  margin-right: 1em;
+  
+
+  width: 429px;
+  height: 301px;
+  flex: 28.5%;
+  transition: background-color 0.3s ease-in-out;
+  transition: a;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  
+}
+
+.dashboardTile:hover{
+  background-color: rgb(128, 128, 128, 0.5);
+}
+
+.dashboardTile:active{
+  background-color: rgba(255, 255, 255, 1);
+  
+}
+
+.dashboardSpace {
+  position:sticky;
+  padding-top:5em;
+  padding-bottom:5em;
+  
+  flex-wrap: wrap;
+  align-items: center; 
+}
+
+.dashboardTitle{
+  text-align: center;
+}
+
+.tileContent{
+  margin:2em;
+}
+
+#weatherTemp{
+  margin-bottom: 0;
+}
+
+#weatherDegreesText{
+  margin-top: 0;
+}
+
+#weatherInfoDiv{
+  text-align: center;
+  display:inline-block;
+  vertical-align: top;
+  font-size: 1.1em;
+}
+
+
+#bottomContainer{
+  text-align: center;
+}
+
+#topContainer{
+  text-align: center;
+}
+
+
+#weatherImg{
+  width:max-content;
+
+  float:left;
+}
+
+#weatherLocation{
+  padding-top: 2em
 }
